@@ -1,0 +1,371 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-04-21T10:48:19.812Z",
+    "__export_source": "insomnia.desktop.app:v2023.1.0",
+    "resources": [
+        {
+            "_id": "req_0b4cb7e34b0143b9bf6fe971651733c3",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1682008223456,
+            "created": 1682007886647,
+            "url": "localhost:3000/api/categories/countByBuilding?building=stokes,mcnaulty",
+            "name": "Get Categories Count",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1682007886647,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_93f51a5487594698bad5552e938c8192",
+            "parentId": null,
+            "modified": 1681917442148,
+            "created": 1681917442148,
+            "name": "New Document",
+            "description": "",
+            "scope": "design",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_7082233cb19a4aac9dd1140155b530a1",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1682005120688,
+            "created": 1682003593951,
+            "url": "localhost:3000/api/rooms/6441598caa0897095cd7091a/6440402a2c4b3515d0d95461",
+            "name": "DELETE ROOM",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1682003593951,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_410cdbb458bf4726b1a9193051c3c4be",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1682004359896,
+            "created": 1681997244775,
+            "url": "localhost:3000/api/rooms/6440402a2c4b3515d0d95461",
+            "name": "CREATE ROOM",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"title\":\"S111\",\n\t\"computer\":\"true\",\n\t\"desc\": \"computer room with projector\",\n\t\"roomNumbers\": [{\"number\":1}, {\"number\":2}]\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1681997244775,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5e61c80344274624b6a2f75f8ca5b6d8",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681992128655,
+            "created": 1681979923794,
+            "url": "localhost:3000/api/users/verifyauth",
+            "name": "UPDATE USER",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\":\"johnupdated\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1681979923794,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_38f4f14f25d444eeb83846285e37206b",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1682002646807,
+            "created": 1681971872320,
+            "url": "localhost:3000/api/auth/login",
+            "name": "LOGIN",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\":\"admin\",\n\t\"password\":\"12345\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1681971872320,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e3bdbae084dc43e9b8044eab5db56499",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681978249416,
+            "created": 1681971515078,
+            "url": "localhost:3000/api/auth/register",
+            "name": "REGISTER",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\":\"stas\",\n\t\"phone\":\"123456\",\n\t\"email\":\"stas@dcu.ie\",\n\t\"password\":\"123456\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1681971515078,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_cd4bb61393c8442eb1719aa60795394d",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681984909430,
+            "created": 1681931714201,
+            "url": "localhost:3000/api/categories/6440f36aa743a89ae64f1c38",
+            "name": "DELETE CATEGORIES",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1681931714201,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_598d73270b1943edb667b94380d30410",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681932460878,
+            "created": 1681931278326,
+            "url": "http://localhost:3000/api/categories",
+            "name": "GET ALL CATEGORIES",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1681931278326,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ddcf5c84edab4f43bad182c4446474c3",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681932477074,
+            "created": 1681931160495,
+            "url": "http://localhost:3000/api/categories/644040352c4b3515d0d95463",
+            "name": "GET CATEGORIES",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1681931160495,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_3bdd64c1ebf24fdfa8a9a263d1bc9683",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681995350660,
+            "created": 1681928346288,
+            "url": "localhost:3000/api/categories/6440402a2c4b3515d0d95461",
+            "name": "UPDATE CATEGORIES",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"building\": \"Science Building\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1681928346288,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_85df59fef7b442558257818b25649271",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1682007870149,
+            "created": 1681919521110,
+            "url": "localhost:3000/api/categories",
+            "name": "CREATE CATEGORIES",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\":\"Quiet pod5\",\n\t\"type\":\"comp Building\",\n\t\"building\":\"McNaulty\",\n\t\"title\":\"DCU comp\",\n\t\"desc\":\"comp \"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1681919521110,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_a857ceb52857683fbe6240f170b0dcc9f342b44a",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681917442153,
+            "created": 1681917442153,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1681917442153,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_a857ceb52857683fbe6240f170b0dcc9f342b44a",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1682002648881,
+            "created": 1681917442156,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "access_token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDBmMzZhYTc0M2E4OWFlNjRmMWMzOCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MjAwMjY0OH0.aiD4TY0mZwkWlz5YbSLEx0q4jac9Lmpolu5OMl6xL4c",
+                    "domain": "localhost",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2023-04-20T14:57:28.880Z",
+                    "lastAccessed": "2023-04-20T14:57:28.880Z",
+                    "id": "1836216003548674"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_9540064d1d7f44e8865f14be80ce63cd",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1682074033075,
+            "created": 1681917442149,
+            "fileName": "New Document",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "uts_b06c2e51d7214861a90e0f64b125b8e5",
+            "parentId": "wrk_93f51a5487594698bad5552e938c8192",
+            "modified": 1681917442163,
+            "created": 1681917442163,
+            "name": "Example Test Suite",
+            "_type": "unit_test_suite"
+        }
+    ]
+}
